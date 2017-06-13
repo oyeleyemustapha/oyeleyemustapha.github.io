@@ -15,6 +15,10 @@ body a{
 	-ms-transition:0.5s all;
 }
 
+.top-header-info .btn{
+	display: none;
+	margin-top: 15px;
+}
 
 /*-----------------SOCIAL BUTTON---------------*/
 .btn-social{

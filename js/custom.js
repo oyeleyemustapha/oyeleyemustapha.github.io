@@ -61,5 +61,12 @@ var year=new Date();
 	
 $("span.year").text(year.getFullYear());
 
-
+$('.typed').typeIt({
+     strings: ["Hello there", "I am Mustapha Oyeleye", "A Web Developer based in Ibadan."],
+     speed: 50,
+     autoStart: false,
+     callback: function() {
+     $(".top-header-info .btn").fadeIn(500);
+} 
+}); 
 });
