@@ -57,4 +57,9 @@ percentWeight: 'normal'
 });		
 
 
+var year=new Date();
+	
+$("span.year").text(year.getFullYear());
+
+
 });

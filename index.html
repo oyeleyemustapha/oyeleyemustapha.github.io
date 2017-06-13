@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css'>
 <link rel="icon" href="images/favicon.ico">
-<link href="css/font-awesome.min.css" rel='stylesheet' type='text/css'>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
 <link href="css/style.css" rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -172,42 +172,56 @@ Based in Ibadan.<br/>
 <div id="contact" class="contact"> 
 <div class="container">
 <h2>CONTACT ME</h2>
-<br>
 
 <div class="contact-grids">
 
-<div class="col-md-8 contact-left">
-<p>Do you have a Project for me, Feel free to send me a Quote.</p>
+<div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12">
+	<div class="col-lg-3 col-md-4 col-sm-4">
+		<a class="btn btn-block btn-social btn-lg btn-twitter" href="https://www.twitter.com/oyeleye731" target="_blank"><span class="fa fa-twitter"></span> Twitter</a>
+	</div>
+							
+	<div class="col-lg-3 col-md-4 col-sm-4">
+		<a class="btn btn-block btn-social btn-lg btn-facebook" href="https://www.facebook.com/leyemustoy" target="_blank"><span class="fa fa-facebook"></span> Facebook</a>
+	</div>
 
-<form method="post" action="">
-<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" name="name" id="name" required>
-<input type="text" value="Email Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email Address';}" name="email" id="email" required>
-<input type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" name="phone" id="phone" required>
-<textarea rows="2" cols="70" onfocus="if(this.value == 'Message') this.value='';" onblur="if(this.value == '') this.value='Leave your message';" name="message" id="message" required>Message</textarea>
-<button class="btn btn-info btn-lg" name="send" id="send"><i class='fa fa-envelope fa-fw'></i> Send</button>
-<div class="clearfix"> </div>
-</form>
+	<div class="col-lg-3 col-md-4 col-sm-4">
+		<a class="btn btn-block btn-social btn-lg btn-linkedin" href="https://ng.linkedin.com/in/oyeleyemustapha" target="_blank"><span class="fa fa-linkedin"></span> Linkedin</a>
+	</div>
+
+	<div class="col-lg-3 col-md-4 col-sm-4">
+		<a class="btn btn-block btn-social btn-lg btn-github" href="https://www.github.com/oyeleyemustapha" target="_blank"><span class="fa fa-github"></span> Github</a>
+	</div>
 </div>
-<div class="col-md-4">
-<h2>Connect with Me</h2>
-<h3><i class="fa fa-mobile fa-fw"></i> 08176515629</h3>
-<h3><a href="https://www.facebook.com/leyemustoy" target="_blank"><i class="fa fa-facebook fa-fw"></i> Facebook</a></h3>
-<h3><a href="https://www.twitter.com/oyeleye731" target="_blank"><i class="fa fa-twitter fa-fw"></i> Twitter</a></h3>
-<h3><a href="https://ng.linkedin.com/in/oyeleyemustapha" target="_blank"><i class="fa fa-linkedin fa-fw"></i> Linkedin</a></h3>				
+
+
+<div class="col-md-12 col-lg-8 col-lg-offset-2 contact-left">
+	<p>Do you have a Project for me, Feel free to send me a Quote.</p>
+	<form method="post" id="contactForm">
+		<input type="text" name="name" id="name" placeholder="Name" autocomplete="off" required>
+		<input type="email" name="email" id="email" placeholder="Email address" autocomplete="off" required>
+		<input type="tel"  name="phone" id="phone" placeholder="Phone" autocomplete="off" required>
+		<textarea rows="2" cols="70"  name="message" id="message" required>Message</textarea>
+		<button class="btn btn-info btn-lg" name="send" id="send"><i class='fa fa-envelope fa-fw'></i> Send</button>
+	</form>
 </div>
+
 </div>
 
 </div>
 </div>
 <!--CONTACT -->
-		
+	
+<!--==========================
+/////////////FOOTER///////////
+============================-->	
 <div class="copy-right text-center">
 <div class="container">
-<p>&copy; 2017. Made with Love by Me.</p>
-
+<p>&copy; <span class="year"></span>. Made with &hearts; by Me.</p>
 <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 </div>
 </div>
+
+
 <script src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
